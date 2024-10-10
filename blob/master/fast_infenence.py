@@ -4,8 +4,8 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from transformers.generation.utils import GenerationConfig
 
-st.set_page_config(page_title="MiniMind-V1 108M(无历史上文)")
-st.title("MiniMind-V1 108M(无历史上文)")
+st.set_page_config(page_title="MiniMind-V1")
+st.title("MiniMind-V1")
 
 model_id = "jingyaogong/minimind-v1"   ###    minimind-v1  D:/Desktop/minimind/minimind
 
@@ -36,7 +36,7 @@ def clear_chat_messages():
 
 def init_chat_messages():
     with st.chat_message("assistant", avatar='🤖'):
-        st.markdown("您好，我是由Joya开发的MiniMind，很高兴为您服务😄")
+        st.markdown("您好，我是由hxy开发的MiniMind，很高兴为您服务😄")
 
     if "messages" in st.session_state:
         for message in st.session_state.messages:
